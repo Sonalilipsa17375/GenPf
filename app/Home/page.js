@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 // import form from "./Formdata";
-import User from "../Context";
+// import User from "../Context";
 import ParticlesComponent from "../components/particles";
 import Submit from "../components/Submit";
 
@@ -125,7 +125,7 @@ export default function Home() {
   };
 
   return (
-    <User.Provider value={formdata}>
+    // <User.Provider value={formdata}>
       <div className="w-full h-screen flex items-center justify-center flex-col text-center p-6 ">
       <ParticlesComponent  />
         <div className="w-full md:w-3/4 lg:w-2/4 h-auto transition-transform duration-300 transform hover:scale-10 hover:shadow-lg bg-black border-[0.2rem] flex flex-col justify-center items-center p-10 bg-gradient-to-r from-purple-500 to-pink-500 text-black">
@@ -160,6 +160,6 @@ export default function Home() {
           </form>
         </div>
       </div>
-    </User.Provider>
+    // </User.Provider>
   );
 }

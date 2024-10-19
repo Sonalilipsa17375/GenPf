@@ -1,12 +1,6 @@
+"use client"
 import { createContext } from "react";
 
-const User = createContext({
-  name: '',
-  contact: '',
-  email: '',
-  github: '',
-  resume: '',
-  techstack: ''
-});
+const UserContext = createContext();
 
-export default User;
+export default UserContext;

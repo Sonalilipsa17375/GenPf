@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import ParticlesComponent from "./particles";
 // import { motion } from "framer-motion";
 import GetStarted from "./GetStarted";
+import UserContext from "../Context";
 
 const Main= () => {
   const imageCycle = {
@@ -30,6 +31,8 @@ const Main= () => {
     },
   };
 
+  const a = useContext(UserContext);
+
   return (
     <div className="w-full h-screen flex items-center py-12 justify-center lg:flex-row sm:flex-col md:flex-col text-left p-6 space-y-6">
       {/* Background Particles */}
@@ -41,7 +44,7 @@ const Main= () => {
           Create Your First Professional <br /> Portfolio Website
         </h1>
         <h4 className="text-xl sm:text-2xl md:text-3xl text-yellow-100 font-semibold">
-          Showcase your work with an online portfolio
+          Showcase your work with an online portfolio - {a.name}
         </h4>
         <GetStarted />
       </div>
