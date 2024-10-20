@@ -8,8 +8,8 @@ import Navbar from './components/Navbar'
 const page = ({component,pageProps}) => {
   return (
     
-    <ContextState>  {/* Wrap the app with ContextState */}
-    <component {...pageProps} />
+    <ContextState>  
+    <Main/>
   </ContextState>
    
   )
